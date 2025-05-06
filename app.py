@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import joblib
 
 app = Flask(__name__)
+CORS(app, origins=["*"]) 
 
 vectorizer = joblib.load("model/vectorizer.pkl")  
 model_class = joblib.load("model/klasifikasi.pkl")
