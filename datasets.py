@@ -53,5 +53,5 @@ def save_to_csv(data, filename="dataset.csv"):
     print(f"Data telah disimpan di {filename}")
 
 
-generated_data = generate_data(2001, 50)
+generated_data = generate_data(3001, 50)
 save_to_csv(generated_data)
